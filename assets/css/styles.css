@@ -1,0 +1,203 @@
+/*------------zero------------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none; color:black}
+a:hover{text-decoration: none;}
+a:active{color:black}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*------------tag------------*/
+main {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 auto;
+	width: 100%;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	vertical-align: bottom;
+	height: 140px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	width: 100%;
+}
+/*------------body------------*/
+.box {
+	width: 1100px;
+	padding: 0 40px;
+	/*background: red;*/
+}
+.body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+.foot__line {
+	margin: 5px 0;
+	border-bottom: 3px solid black;
+	width: 50px;
+}
+/*------------header------------*/
+.header {
+	display: flex;
+	justify-content: center;
+	height: 70px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+	width: 100%;
+	background: #fff;
+	z-index: 100;
+}
+.header_scroll {
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	vertical-align: center;
+	height: 100%;
+}
+.header__menu .menu_left {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.header__menu .menu__midl {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 400px;
+}
+.header__menu .menu__midl .menu__midl__cat {
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	align-items: center;
+}
+.header__menu .menu__midl .menu__midl__cat:hover {
+	color: rgba(0, 0, 0, 0.5);
+}
+.header__menu .menu_right {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100px;
+}
+.header__menu .menu_space {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 100px;
+}
+.header__menu .menu_left .menu__text {
+	display: flex;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 200;
+}
+.header__menu .menu_left .menu__text .menu__text__name {
+	font-weight: 600;
+}
+.header__menu  .menu_right .menu__basket {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.header__menu  .menu_right .menu__profile {
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+.header__menu .menu_right .menu__image {
+	width: 40px;
+	height: 40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	font-weight: 200;
+}
+/*------------main------------*/
+.main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.main .main__top2 {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	height: 700px;
+}
+.main .main__top2 .main__top2_block {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: left;
+	font-family: 'Hind Madurai', sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+}
+.main .main__top2 .main__top2_block .main__top2_img {
+	width: 500px;
+	height: 600px;
+}
+.main .main__top2 a {
+
+}
+/*------------footer------------*/
+.foot {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.foot .foot__social {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.foot .foot__social .foot__text {
+	font-family: 'Hind Madurai', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+.foot .foot__social .foot__link {
+	font-family: 'Hind Madurai', sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+.foot a:hover {
+	text-decoration: underline;
+}
