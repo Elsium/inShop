@@ -45,6 +45,7 @@ footer {
 	height: 140px;
 	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	width: 100%;
+	margin-top: 20px;
 }
 /*------------body------------*/
 .box {
@@ -103,6 +104,7 @@ footer {
 	align-items: center;
 }
 .header__menu .menu__midl .menu__midl__cat:hover {
+	transition: color 0.3s;
 	color: rgba(0, 0, 0, 0.5);
 }
 .header__menu .menu_right {
@@ -163,19 +165,131 @@ footer {
 	flex-direction: column;
 	flex-wrap: nowrap;
 	justify-content: left;
+}
+.main .main__top2 .main__top2__block .main__top2_img {
+	width: 500px;
+	height: 600px;
+}
+.main .main__top2 .main__top2__block .main__top2__textBlock {
+	padding: 0 20px;
+}
+.main .main__top2 .main__top2__block .main__top2__textBlock .main__top2_name {
+	margin-top: 30px;
 	font-family: 'Hind Madurai', sans-serif;
 	font-weight: 400;
 	font-size: 24px;
 }
-.main .main__top2 .main__top2_block .main__top2_img {
-	width: 500px;
-	height: 600px;
+.main .main__top2 .main__top2__block .main__top2__textBlock .main__top2__look:hover {
+	transition: color 0.5s;
+	color: rgba(0, 0, 0, 0.8);
 }
-.main .main__top2 a {
-
+.main .main__top2 .main__top2__block .main__top2__textBlock .main__top2__look .main__top2_link {
+	display: block;
+	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+.main .main__top2 .main__top2__block .main__top2__textBlock .main__top2__look .main__line {
+	margin-top: 2px;
+	border-bottom: 1px solid black;
+	width: 90px;
+}
+.main .main__popular {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+.main .main__popular .main__popular_text {
+	margin-top: 30px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+}
+.main .main__popular .main__popular__box {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+}
+.main .main__popular .main__popular__box .main__popular__box__card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background: rgba(243, 243, 243, 0.5);
+	width: 240px;
+	height: 450px;
+	font-family: 'Montserrat', sans-serif;
+}
+.main .main__popular .main__popular__box .main__popular__box__card:hover {
+	transition: background 0.5s;
+	background: rgba(243, 243, 243, 1);
+}
+.main .main__popular .main__popular__box .main__popular__box__card .main__popular__box__card_img {
+	width: 200px;
+	height: 300px;
+}
+.main .main__popular .main__popular__box .main__popular__box__card .main__popular__box__card_name {
+	font-weight: 400;
+	font-size: 18px;
+}
+.main .main__popular .main__popular__box .main__popular__box__card .main__popular__box__card_desc {
+	font-weight: 200;
+	font-size: 14px;
+}
+.main .main__popular .main__popular__box .main__popular__box__card .main__popular__box__card_cost {
+	font-weight: 400;
+	font-size: 16px;
+}
+.main .main__popular .main__popular__slide {
+	margin-top: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 500px;
+}
+.main .main__popular .main__popular__slide .main__popular__slide_last {
+	width: 40px;
+	height: 40px;
+}
+.main .main__popular .main__popular__slide .main__popular__slide_last:hover {
+	 cursor: pointer;
+ }
+.main .main__popular .main__popular__slide .main__popular__slide_next:hover {
+	cursor: pointer;
+}
+.main .main__popular .main__popular__slide .main__popular__slide__position_point:hover {
+	 cursor: pointer;
+ }
+.main .main__popular .main__popular__slide .main__popular__slide__position {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 80px;
+}
+.main .main__popular .main__popular__slide .main__popular__slide__position .main__popular__slide__position_point {
+	border: 2px solid rgb(186, 186, 186);
+	border-radius: 100px;
+}
+.main .main__popular .main__popular__slide .main__popular__slide__position .main__popular__slide__position_point_active {
+	border: 2px solid rgb(186, 186, 186);
+	border-radius: 100px;
+}
+.main .main__popular .main__popular__slide .main__popular__slide_next {
+	width: 40px;
+	height: 40px;
 }
 /*------------footer------------*/
 .foot {
+	overflow: hidden;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -194,10 +308,14 @@ footer {
 	font-weight: 600;
 }
 .foot .foot__social .foot__link {
+	margin-top: 1px;
 	font-family: 'Hind Madurai', sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 }
 .foot a:hover {
 	text-decoration: underline;
+}
+#some {
+	color: red;
 }
