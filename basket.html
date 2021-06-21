@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-    <title>InShop - Социальные сети</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+    <title>InShop - Корзина</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;800&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../../../basketStyles.css">
 <body>
 <div class="body">
     <header class="header">
@@ -20,7 +21,7 @@
                 </div>
                 <div class="menu_left">
                     <div class="menu__text">
-                        <a href="../index.html">
+                        <a href="index.html">
                             <p class="menu__text__name">INSHOP</p>
                         </a>
                     </div>
@@ -29,18 +30,13 @@
                 <nav class="menu__midl">
                     <ul class="menu__list">
                         <li>
-                            <a class="menu__burger_profile" href="../auth/auth.html">
+                            <a class="menu__burger_profile" href="auth/auth.html">
                                 <p>Личный</p>
                                 <p>кабинет</p>
                             </a>
                         </li>
                         <li>
-                            <a class="menu__burger_basket" href="">
-                                <p>Корзина</p>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="menu__midl__link_mobile" href="../index.html">
+                            <a class="menu__midl__link_mobile" href="index.html">
                                 <p>Главная</p>
                             </a>
                         </li>
@@ -294,30 +290,9 @@
                 <div class="menu_space"></div>
                 <!--                -->
                 <div class="menu_right">
-                    <div class="menu__basket">
-                        <img src="../assets/img/basket.png" class="menu__image" alt="Корзина">
-                        <div class="menu__basket_block">
-                            <div class="menu__basket_goods">
-                            
-                            </div>
-                            <div class="menu__basket_price">
-                                <div class="total_cost">
-                                    Общая стоимость заказа
-                                </div>
-                                <div class="price">
-                                    Цена
-                                </div>
-                            </div>
-                            <div class="menu__basket_buy">
-                                <a href="../basket.html" class="buy_button">
-                                    <span class="color_white">Перейти в корзину</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                     <div class="menu__profile">
-                        <a href="../auth/auth.html">
-                            <img src="../assets/img/profile.png" class="menu__image" alt="Профиль">
+                        <a href="auth/auth.html">
+                            <img src="assets/img/profile.png" class="menu__image" alt="Профиль">
                         </a>
                     </div>
                 </div>
@@ -327,78 +302,24 @@
     </header>
     <main>
         <div class="box">
-            <div class="users">
-                <div class="profile">
-                    <div class="profile__overview">
-                        <a href="https://www.instagram.com/d.elsium/" target="_blank">
-                            <img class="profile__image"
-                                 src="https://scontent-hel3-1.cdninstagram.com/v/t51.2885-19/s150x150/182400737_799933600902670_5148233050579162070_n.jpg?tp=1&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_ohc=Z0xDKKWSJp8AX-IaOxg&tn=UEdLlYyoncuBiZXx&edm=AHG7ALcBAAAA&ccb=7-4&oh=5c6c6fe6d7beb65ca886021b74829b3d&oe=60D2CF50&_nc_sid=5cbaad"
-                                 alt="Картинка">
-                        </a>
+            <div class="basket">
+                <div class="basket_box">
+                    <div class="basket__goods basket__item">
                     </div>
-                    <div class="profile_line"></div>
-                    <div class="profile__info">
-                        <div class="profile__name">
-                            <a href="https://www.instagram.com/d.elsium/" target="_blank">
-                                Дмитрий Ли
-                            </a>
+                    <div class="basket__total_cost basket__item">
+                        <div class="basket__total">
+                            Итого
+                        </div>
+                        <div class="basket__cost">
+                            Цена
                         </div>
                     </div>
+                    <button class="basket__to_order basket__item">
+                        Заказать
+                    </button>
                 </div>
-                <div class="profile">
-                    <div class="profile__info">
-                        <div class="profile__name">
-                            <a href="https://www.instagram.com/stepashx/" target="_blank">
-                                Степан Хомулло
-                            </a>
-                        </div>
-                    </div>
-                    <div class="profile_line"></div>
-                    <div class="profile__overview">
-                        <a href="https://www.instagram.com/stepashx/" target="_blank">
-                            <img class="profile__image"
-                                 src="https://scontent-hel3-1.cdninstagram.com/v/t51.2885-19/s320x320/25038350_1862434224059539_2625641115818131456_n.jpg?tp=1&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_ohc=c5sZIPRk53MAX_41jJn&edm=ABfd0MgBAAAA&ccb=7-4&oh=061f9b5788d1dd4a859794c2377036c9&oe=60D2EA45&_nc_sid=7bff83"
-                                 alt="Картинка">
-                        </a>
-                    </div>
-                </div>
-                <div class="profile">
-                    <div class="profile__overview">
-                        <a href="" target="_blank">
-                            <img class="profile__image"
-                                 src=""
-                                 alt="Картинка">
-                        </a>
-                    </div>
-                    <div class="profile_line"></div>
-                    <div class="profile__info">
-                        <div class="profile__name">
-                            <a href="" target="_blank">
-                                Захар Кузьмин
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="profile">
-                    <div class="profile__info">
-                        <div class="profile__name">
-                            <a href="https://www.instagram.com/pkauvzemln/" target="_blank">
-                                Павел Кузьмин
-                            </a>
-                        </div>
-                    </div>
-                    <div class="profile_line"></div>
-                    <div class="profile__overview">
-                        <a href="https://www.instagram.com/pkauvzemln/" target="_blank">
-                            <img class="profile__image"
-                                 src="https://scontent-hel3-1.cdninstagram.com/v/t51.2885-19/s150x150/108819023_737451660379054_984480771941590308_n.jpg?tp=1&_nc_ht=scontent-hel3-1.cdninstagram.com&_nc_ohc=oymFzmDW8fcAX8yICbW&edm=ABfd0MgBAAAA&ccb=7-4&oh=29d4d6b0879d5fa5b3aaffe9c769b565&oe=60D3BA24&_nc_sid=7bff83"
-                                 alt="Картинка">
-                        </a>
-                    </div>
-
-                </div>
-
             </div>
+
         </div>
     </main>
     <footer>
@@ -408,9 +329,9 @@
                 <div class="foot__social">
                     <p class="foot__text">СОЦ. СЕТИ</p>
                     <div class="foot__line"></div>
-                    <a href="social_vk.html" class="foot__link">VKONTAKTE</a>
-                    <a href="social_inst.html" class="foot__link">INSTAGRAM</a>
-                    <a href="social_github.html" class="foot__link">GITHUB</a>
+                    <a href="social/social_vk.html" class="foot__link">VKONTAKTE</a>
+                    <a href=social/social_inst.html class="foot__link">INSTAGRAM</a>
+                    <a href="social/social_github.html" class="foot__link">GITHUB</a>
                 </div>
                 <!--                    -->
                 <div class="foot__?"></div>
@@ -423,7 +344,11 @@
         </div>
     </footer>
 </div>
-<script src="../assets/jquery.js"></script>
-<script src="../assets/js/scripts.js"></script>
+<!--    -->
+<script src="assets/jquery.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/js/slick.js"></script>
+<script src="assets/js/mainSlider.js"></script>
+<!--    -->
 </body>
 </html>
