@@ -326,7 +326,45 @@
 	</header>
 	<main>
 		<div class="box">
-		
+			<div class="main__auth">
+				<div class="main__buttons">
+					<button class="ar" id="auto" onclick="change(event, 'auth')">Авторизация</button>
+					<button class="ar" onclick="change(event, 'reg')">Регистрация</button>
+				</div>
+				<div id="auth" class="main__auth__container">
+					<form action="#" method="post">
+						<div class="form__block_auth">
+							<p>Логин</p>
+							<input tabindex="1" placeholder="Elsium" class="auth" type="text">
+							<p>Пароль</p>
+							<input tabindex="2" placeholder="39fh923@!FSQ" class="auth" type="password">
+							<button tabindex="3" type="submit">Войти</button>
+							<a href="#" class="forgot">Забыли пароль?</a>
+						</div>
+					</form>
+				</div>
+				<div id="reg" class="main__auth__container">
+					<form action="#" method="post">
+						<div class="form__block_reg">
+							<div class="form__block_reg_left">
+								<p>Имя</p>
+								<input required tabindex="1" placeholder="Дима" class="reg" type="text">
+								<p>Фамилия</p>
+								<input required tabindex="2" placeholder="Ли" class="reg" type="text">
+								<p>Логин</p>
+								<input required tabindex="3" placeholder="Elsium" class="reg" type="text">
+							</div>
+							<div class="form__block_reg_right">
+								<p>Пароль</p>
+								<input required tabindex="4" placeholder="39fh923@!FSQ" class="reg" type="password">
+								<p>Повтор пароля</p>
+								<input required tabindex="5" placeholder="39fh923@!FSQ" class="reg" type="password">
+								<button tabindex="6" type="submit">Войти</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</main>
 	<footer>
@@ -354,6 +392,7 @@
 <!--    -->
 <script src="../assets/jquery.js"></script>
 <script src="../assets/js/scripts.js"></script>
+<script src="../assets/js/scriptAuth.js"></script>
 <!--    -->
 </body>
 </html>

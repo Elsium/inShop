@@ -133,6 +133,7 @@ footer {
 	opacity: 1;
 }
 .menu__midl__block {
+	animation: fadeEffect 0.5s;
 	position: absolute;
 	width: 100vw;
 	height: 500px;
@@ -275,6 +276,7 @@ footer {
 }
 /*------------menu__basket__block------------*/
 .menu__basket_block {
+	animation: fadeEffect 0.5s;
 	font-family: "Montserrat", serif;
 	display: none;
 	background: white;
@@ -282,7 +284,7 @@ footer {
 	width: 400px;
 	top:70px;
 	margin-left: -355px;
-	box-shadow:0 10px 15px rgba(0,0,0,0.3);
+	box-shadow:0 11px 10px rgba(0,0,0,0.3);
 }
 .menu__basket:hover {
 	cursor: pointer;
@@ -376,6 +378,11 @@ footer {
 	color: white;
 	justify-content: center;
 	height: 40px;
+	font-size: 18px;
+}
+.basket__to_order:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
 }
 .main {
 	display: flex;
@@ -755,6 +762,101 @@ footer {
 	font-family: "Montserrat", serif;
 	display: flex;
 }
+.main__auth {
+	margin-top: 70px;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+.main__buttons {
+	margin-top: 30px;
+	display: flex;
+	width: 70%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+.main__buttons button {
+	background: none;
+	height: 40px;
+	width: 200px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	border-bottom: 2px solid black;
+}
+.main__buttons button:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}
+.main__auth__container {
+	display: none;
+	border-top: 1px solid black;
+	margin-top: 20px;
+	width: 70%;
+	animation: fadeEffect 1s;
+}
+.form__block_auth {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+.form__block_auth p, .form__block_reg p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+.form__block_auth button, .form__block_reg button {
+	margin-top: 20px;
+	height: 40px;
+	width: 400px;
+	background: black;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+.form__block_auth a {
+	display: block;
+	margin-top: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+.form__block_auth a:hover {
+	text-decoration: underline;
+ }
+.form__block_reg button {
+	width: 200px;
+}
+.form__block_auth button:hover, .form__block_reg button:hover {
+	transition: opacity 0.3s;
+	opacity: 0.8;
+}
+.auth, .reg {
+	border: 1px black solid;
+	height: 30px;
+	width: 400px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-family: 'Hind Madurai', sans-serif;
+	font-size: 20px;
+}
+.reg {
+	width: 200px;
+}
+.form__block_reg {
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: center;
+}
+.form__block_reg_left, .form__block_reg_right {
+	display: flex;
+	flex-direction: column;
+}
 /*------------footer------------*/
 .foot {
 	overflow: hidden;
@@ -789,6 +891,15 @@ footer {
 @media (max-width: 1200px) {
 	.box {
 		width: 970px;
+	}
+	.main__auth {
+		width: 75%;
+	}
+	.main__buttons {
+		width: 75%;
+	}
+	.main__auth__container {
+		width: 75%;
 	}
 	.main__top2__img {
 		width: 435px;
@@ -843,6 +954,15 @@ footer {
 @media (max-width: 992px) {
 	.box {
 		width: 750px;
+	}
+	.main__auth {
+		width: 100%;
+	}
+	.main__buttons {
+		width: 70%;
+	}
+	.main__auth__container {
+		width: 70%;
 	}
 	.main__top2__img {
 		width: 325px;
@@ -918,6 +1038,41 @@ footer {
 /*mobile*/
 /*+mega-burger*/
 @media (max-width: 768px) {
+	.main__auth {
+		width: 100%;
+	}
+	.main__buttons {
+		width: 100%;
+	}
+	.main__auth__container {
+		width: 100%;
+	}
+	.main__buttons button {
+		height: 40px;
+		width: 150px;
+		font-size: 20px;
+	}
+	.form__block_auth p, .form__block_reg p {
+		font-size: 14px;
+	}
+	.form__block_reg {
+		justify-content: space-between;
+	}
+	.form__block_auth button {
+		width: 200px;
+	}
+	.form__block_reg_right button {
+		width: 130px;
+		height: 33px;
+		font-size: 16px;
+	}
+	.auth, .reg {
+		width: 200px;
+		font-size: 16px;
+	}
+	.reg {
+		width: 130px;
+	}
 	.profile__name {
 		margin-top: -50px;
 	}
@@ -1158,4 +1313,9 @@ footer {
 		display: none;
 		width: 0;
 	}
+}
+
+@keyframes fadeEffect {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
