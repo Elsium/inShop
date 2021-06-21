@@ -1,3 +1,4 @@
+body{transition: all 0.5s;}
 a, a:visited{text-decoration: none; color:black}
 a:hover{text-decoration: none;}
 a:active{color:black}
@@ -7,7 +8,7 @@ footer {
 }
 /*------------body------------*/
 .foot_line {
-    border-bottom: 3px solid black;
+    background: black;
 }
 /*------------header------------*/
 .header {
@@ -116,6 +117,12 @@ footer {
 .auth, .reg {
     border: 1px solid black;
 }
+.slick-dots button {
+    background: rgba(0, 0, 0, 0.3);
+}
+.slick-dots .slick-active button {
+    background: rgb(0, 0, 0);
+}
 @media (max-width: 768px) {
     .menu__midl {
         background: rgba(255, 255, 255, 0.9);
@@ -124,10 +131,10 @@ footer {
         background: rgba(0, 0, 0, 0.5);
     }
     .menu__burger:before, .menu__burger:after {
-        background: rgb(0, 0, 0,);
+        background: rgb(0, 0, 0);
     }
     .menu__burger span {
-        background: rgb(0, 0, 0,);
+        background: rgb(0, 0, 0);
     }
     .menu__midl__link_mobile:hover, .menu__burger_basket:hover, .menu__burger_profile:hover {
         transition: color 0.3s;

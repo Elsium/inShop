@@ -1,4 +1,5 @@
-* {color:white}
+* {color:white;}
+body {transition: all 0.5s;}
 a, a:visited{text-decoration: none; color:white}
 a:hover{text-decoration: none;}
 a:active{color:white}
@@ -9,9 +10,16 @@ footer {
 body {
     background: #1c1c1c;
 }
+/*------------img------------*/
+.menu__image {
+    filter: invert(100%);
+}
+.main__news__control_prev, .main__news__control_next, .main__popular__control_prev, .main__popular__control_next {
+    filter: invert(100%);
+}
 /*------------body------------*/
 .foot_line {
-    border-bottom: 3px solid white;
+    background: white;
 }
 /*------------header------------*/
 .header {
@@ -120,6 +128,12 @@ body {
 .auth, .reg {
     background: rgb(45, 45, 45);
     border: 1px solid white;
+}
+.slick-dots button {
+    background: rgba(255, 255, 255, 0.3);
+}
+.slick-dots .slick-active button {
+    background: rgb(255, 255, 255);
 }
 @media (max-width: 768px) {
     .menu__midl {
