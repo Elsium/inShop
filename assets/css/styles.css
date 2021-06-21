@@ -25,9 +25,8 @@ input,button,textarea{font-family:inherit;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner {padding:0;border:0;}
-a, a:visited{text-decoration: none; color:black}
+a, a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
-a:active{color:black}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
@@ -43,7 +42,6 @@ footer {
 	justify-content: center;
 	vertical-align: bottom;
 	height: 140px;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	width: 100%;
 	margin-top: 30px;
 }
@@ -61,7 +59,6 @@ footer {
 }
 .foot__line {
 	margin: 5px 0;
-	border-bottom: 3px solid black;
 	width: 50px;
 }
 /*------------header------------*/
@@ -70,9 +67,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	height: 70px;
-	box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 	width: 100%;
-	background: #fff;
 	z-index: 50;
 }
 .header_scroll {
@@ -140,10 +135,8 @@ footer {
 	padding: 20px 40px 0;
 	top: 70px;
 	left: 0;
-	background: white;
 	display: none;
 	opacity: 0;
-	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 .menu__midl__flex {
 	display: flex;
@@ -164,13 +157,12 @@ footer {
 }
 .menu__midl__link:hover {
 	transition: color 0.3s;
-	color: rgba(0, 0, 0, 0.5);
 }
 .menu_right {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
-	width: 110px;
+	width: 170px;
 }
 .menu__text {
 	display: flex;
@@ -274,17 +266,26 @@ footer {
 	font-size: 14px;
 	font-weight: 400;
 }
+.theme-button {
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	align-items: center;
+	width: 50px;
+	text-align: center;
+	user-select: none;
+}
+.theme-button:hover {
+	cursor: pointer;
+}
 /*------------menu__basket__block------------*/
 .menu__basket_block {
 	animation: fadeEffect 0.5s;
 	font-family: "Montserrat", serif;
 	display: none;
-	background: white;
 	position:absolute;
 	width: 400px;
 	top:70px;
 	margin-left: -355px;
-	box-shadow:0 11px 10px rgba(0,0,0,0.3);
 }
 .menu__basket:hover {
 	cursor: pointer;
@@ -294,7 +295,6 @@ footer {
 }
 .menu__basket_goods {
 	height: 130px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 .menu__basket_price {
 	width: 100%;
@@ -303,7 +303,6 @@ footer {
 }
 .total_cost {
 	display: flex;
-	color: rgba(0, 0, 0, 0.5);
 	width: 300px;
 	justify-content: center;
 	padding: 20px;
@@ -319,15 +318,8 @@ footer {
 	width: 100%;
 	display: flex;
 	height: 37px;
-	background: black;
 	justify-content: center;
 	padding: 11px;
-}
-.color_white {
-	color: #fff;
-}
-.buy_button:hover {
-	background: rgba(0, 0, 0,0.8);
 }
 /*------------main------------*/
 .basket {
@@ -348,12 +340,10 @@ footer {
 }
 .basket__goods {
 	height: 200px;
-	border: 1px solid black;
 }
 .basket__total_cost {
 	display: flex;
 	height: 60px;
-	background: rgba(0, 0, 0, 0.2);
 }
 .basket__total {
 	display: flex;
@@ -374,8 +364,6 @@ footer {
 .basket__to_order {
 	padding: 10px 0;
 	display: flex;
-	background: black;
-	color: white;
 	justify-content: center;
 	height: 40px;
 	font-size: 18px;
@@ -423,7 +411,6 @@ footer {
 }
 .main__top2__look:hover {
 	transition: color 0.5s;
-	color: rgba(0, 0, 0, 0.8);
 }
 .main__top2_link {
 	display: block;
@@ -434,7 +421,6 @@ footer {
 }
 .main__line {
 	margin-top: 2px;
-	border-bottom: 1px solid black;
 	width: 90px;
 }
 .main__popular__box__card_name {
@@ -476,14 +462,12 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
-	background: rgba(243, 243, 243, 0.5);
 	width: 240px;
 	height: 450px;
 	font-family: 'Montserrat', sans-serif;
 }
 .main__popular__box__card:hover {
 	transition: background 0.5s;
-	background: rgba(243, 243, 243, 1);
 }
 .main__popular__box__card__img {
 	width: 200px;
@@ -543,11 +527,9 @@ footer {
 .main__new__text_top {
 	font-weight: 400;
 	font-size: 14px;
-	color: rgba(0, 0, 0, 0.6);
 }
 .main__new__text_top:hover {
 	transition: color 0.5s;
-	color: rgba(0, 0, 0, 1);
 }
 .main__new__text_ds {
 	margin-top: -10px;
@@ -562,7 +544,6 @@ footer {
 }
 .main__new__look:hover {
 	transition: color 0.5s;
-	color: rgba(0, 0, 0, 0.8);
 }
 .main__new_link {
 	display: block;
@@ -617,11 +598,9 @@ footer {
 .main__3cat__item__text_cat {
 	font-weight: 400;
 	font-size: 18px;
-	color: rgba(0, 0, 0, 0.6);
 }
 .main__3cat__item__text_cat:hover {
 	transition: color 0.5s;
-	color: rgba(0, 0, 0, 1);
 }
 .main__3cat__item__text_prod {
 	font-weight: 600;
@@ -629,7 +608,6 @@ footer {
 }
 .main__3cat__item__text_look:hover {
 	transition: color 0.5s;
-	color: rgba(0, 0, 0, 0.8);
 }
 .main__3cat_link {
 	display: block;
@@ -640,7 +618,6 @@ footer {
 }
 .main__line_bigger {
 	margin-top: 2px;
-	border-bottom: 1px solid black;
 	width: 123px;
 }
 .main__news {
@@ -670,14 +647,12 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 	padding: 20px;
-	background: rgba(243, 243, 243, 0.5);
 	width: 240px;
 	height: 450px;
 	font-family: 'Montserrat', sans-serif;
 }
 .main__news__box__card:hover {
 	transition: background 0.5s;
-	background: rgba(243, 243, 243, 1);
 }
 .main__news__box__card__img {
 	width: 200px;
@@ -729,7 +704,6 @@ footer {
 .profile_line {
 	width: 400px;
 	height: 2px;
-	background: black;
 	margin-top: -30px;
 }
 .profile__info {
@@ -783,7 +757,6 @@ footer {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	font-weight: 600;
-	border-bottom: 2px solid black;
 }
 .main__buttons button:hover {
 	transition: opacity 0.3s;
@@ -791,7 +764,6 @@ footer {
 }
 .main__auth__container {
 	display: none;
-	border-top: 1px solid black;
 	margin-top: 20px;
 	width: 70%;
 	animation: fadeEffect 1s;
@@ -813,8 +785,6 @@ footer {
 	margin-top: 20px;
 	height: 40px;
 	width: 400px;
-	background: black;
-	color: white;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 }
@@ -835,7 +805,6 @@ footer {
 	opacity: 0.8;
 }
 .auth, .reg {
-	border: 1px black solid;
 	height: 30px;
 	width: 400px;
 	margin-bottom: 10px;
@@ -1170,7 +1139,6 @@ footer {
 		width: 50%;
 		height: 100%;
 		transition: all 0.3s ease 0s;
-		background: rgba(255, 255, 255, 0.9);
 		padding: 70px 0 0 0;
 	}
 	.menu__midl_black {
@@ -1182,7 +1150,6 @@ footer {
 		width: 50%;
 		height: 100%;
 		transition: all 0.3s ease 0s;
-		background: rgba(0, 0, 0, 0.5);
 		padding: 70px 0 0 0;
 	}
 	.menu__list {
@@ -1215,7 +1182,6 @@ footer {
 	}
 	.menu__burger:before, .menu__burger:after {
 		content: '';
-		background: rgb(0, 0, 0);
 		position: absolute;
 		width: 100%;
 		height: 2px;
@@ -1224,7 +1190,6 @@ footer {
 	}
 	.menu__burger span {
 		content: '';
-		background: rgb(0, 0, 0);
 		position: absolute;
 		width: 100%;
 		height: 2px;
@@ -1260,7 +1225,6 @@ footer {
 	}
 	.menu__midl__link_mobile:hover, .menu__burger_basket:hover, .menu__burger_profile:hover {
 		transition: color 0.3s;
-		color: rgba(0, 0, 0, 0.5);
 	}
 	.main__new {
 		flex-direction: column;
@@ -1314,7 +1278,6 @@ footer {
 		width: 0;
 	}
 }
-
 @keyframes fadeEffect {
 	from {opacity: 0;}
 	to {opacity: 1;}
