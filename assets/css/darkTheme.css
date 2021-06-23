@@ -35,6 +35,10 @@ body {
     transition: color 0.3s;
     color: rgba(255, 255, 255, 0.5);
 }
+.theme-button p:hover {
+    transition: all 0.3s;
+    opacity: 0.7;
+}
 /*------------menu__basket__block------------*/
 .menu__basket_block {
     animation: fadeEffect 0.5s;
